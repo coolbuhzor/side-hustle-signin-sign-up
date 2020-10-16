@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+.container {
+    margin: 2% 5%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+html {
+     font-size: 10px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#main-page {
+    background: url(./img/featured.jpg)center center/cover;
+    height: 100vh;
+}
+
+.main-nav .nav-flex {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.main-nav .nav-flex .nav-logo a{
+    font-size: 2.5rem;
+    color: #8A0E16;
+    font-weight: bold;
+    text-shadow: 2px 2px  8px #000;
+    
+}
+
+.main-nav .nav-flex ul {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.main-nav .nav-flex ul :hover {
+    text-decoration: underline;
+}
+
+.main-nav .nav-flex .nav-ul ul li a {
+    margin:0 0.5rem;
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem ;
+    text-shadow: 2px 2px 5px #000;
+    /* transform: all 1s ease-in-out; */
+}
+
+.main-nav .nav-flex .nav-ul ul li a:hover {
+    color:#8A0E16 ;
+    font-size: 2.2rem;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+
+/* main-body */
+
+.main-body .main-body-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+
+}
+
+.main-body .main-body-flex .main-body-main {
+  margin: 2rem 0 ;
+  line-height: 1.5;
+}  
+.main-body .main-body-flex .main-body-main h1 {
+font-size: 3.5rem;
+color:white;
+}
+
+.main-body .main-body-flex .main-body-main p {
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #8A0E16;
+}
+
+.btns button {
+border: none;
+margin: 0 1rem;
+
+}
+
+.btn-primary {
+  color: black;
+  background: #f4f4f4;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.btn-secondary {
+  color: black;
+  background: #AB171D;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+
+}
+
+.btn-primary a, .btn-secondary a {
+  color: #000;
+}
+
+
+
+/* main body */
+
+
+
+
+
+
+/* ***************************************** SIGN-IN SIGN-UP ****************************************** */
+
+
+/*  */
+
+.bg-red {
+  background-color: #AB171D;
+}
+  
+#container {
+  width: 60%;
+  margin: auto;
+ 
+  
+}
+
+.bg-red .nav-logo h1 {
+  color: white;
+}
+  
+  
+  .form-wrap {
+    /* 
+      This is the white area around the form and heading, etc
+    */
+  
+    background-color: white;
+    padding: 15px 25px;
+    margin-top: 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    
+  }
+  
+  .form-wrap h1,
+  .form-wrap p {
+    /* 
+      May want to center these
+  
+  
+    */
+    text-align: center;
+    /* font-size: 25px; */
+  }
+  
+  .form-wrap .form-group {
+    /* 
+      Each label, input is wrapped in .form-group
+    */
+    text-align: justify;
+    padding: 10px;
+    font-family: "Raleway" sanserif;
+    font-size: larger;
+    
+  }
+  
+  .form-wrap .form-group label {
+    /* 
+      Label should be turned into a block element
+    */
+    display: block;
+    color: #666;
+  }
+  
+  .form-wrap .form-group input {
+    /* 
+      Inputs should reach accross the .form-wrap 100% and have some padding
+    */
+  
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px; 
+    border: #ddd 1px solid;      
+  }
+  
+  .form-wrap button {
+    /* 
+      Button should wrap accross 100% and display as block
+      Background color for button is #49c1a2
+    */
+    width: 100%;
+    display: block;
+    background-color: #8A0E16;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  } 
+  
+  .form-wrap button:hover {
+    /* 
+      Hover background color for button is #37a08e
+    */
+    background-color: #AB171D;
+    color: gold;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .form-wrap .bottom-text {
+    /* 
+      Bottom text is smaller
+    */
+    font-size: 13px;
+    line-height: 2em;
+    margin-top: 20px;
+  }
+
+  .form-wrap p, footer p {
+    font-size: 2rem;
+  }
+  
+  .form-wrap h1 {
+    font-size: 2.5rem;
+  }
+  footer {
+    /* 
+    Should be centered
+   */
+   text-align: center;
+   margin-top: 10px;
+  }
+  
+  footer a {
+    /* 
+      Footer link color is #49c1a2
+    */
+    color:  #49c1a2;
+    
+  }
+  
+
+  /* mobile query */
+
+  @media (max-width:500px) {
+    .main-nav .nav-flex {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-wrap p, footer p {
+      font-size: 1.5rem;
+    }
+  }
